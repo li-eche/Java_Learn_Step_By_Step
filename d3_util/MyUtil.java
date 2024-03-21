@@ -3,6 +3,11 @@ package com.lyk.d3_util;
 import java.util.Random;
 
 public class MyUtil {
+
+    //将构造器私有化，方式外部用其去创建对象，浪费内存
+    private MyUtil(){
+
+    }
     public static String createCode(int n) {
         String code ="";
         String data = "abcdefghijklmnopqrstuvwxyz";
